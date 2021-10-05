@@ -303,10 +303,10 @@ void setupWIFI()
   delay(1000);
 
   WiFi.mode(WIFI_STA);
-  WiFi.onEvent(WiFiEvent);
+  // WiFi.onEvent(WiFiEvent);
   WiFi.setAutoConnect(true);
   WiFi.setAutoReconnect(true);
-  WiFi.setHostname(HOSTNAME);
+  // WiFi.setHostname(HOSTNAME);
   WiFi.begin(ssid, password);
 #if USE_STATIC_IP
   WiFi.config(staticIP, gateway, subnet);
